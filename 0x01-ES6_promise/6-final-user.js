@@ -10,7 +10,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   promise.then((res) => {
     const newArr = res.map((o) => ({
       status: o.status,
-      value: o.status === 'fulfilled' ? o.value : o.reason,
+      value: o.status === 'fulfilled' ? o.value : String(o.reason),
     }));
     console.log(newArr);
   });
