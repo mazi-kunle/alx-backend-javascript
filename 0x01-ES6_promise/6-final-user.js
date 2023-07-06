@@ -12,8 +12,8 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       status: o.status,
       value: o.status === 'fulfilled' ? o.value : String(o.reason),
     }));
-    console.log(newArr);
+    //console.log(newArr);
   });
 
-  return promise;
+ return promise;
 }
