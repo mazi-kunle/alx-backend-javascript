@@ -15,14 +15,14 @@ const app = http.createServer((req, res) => {
     case '/students':
       res.writeHead(200);
       res.write('This is the list of our students\n');
-      students = countStudents('database.csv');
+      students = countStudents(process.argv[2]);
+
       students
         .then((value) => {
           res.end(value.join('\n'));
         })
-        .catch(() => {
-          res.writeHead(404);
-          res.end('Cannot load the database');
+        .catch((err) => {
+          res.end(err.message);
         });
       break;
     default:
