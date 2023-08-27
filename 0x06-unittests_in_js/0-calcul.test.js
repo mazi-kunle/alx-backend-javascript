@@ -3,19 +3,15 @@ const calculateNUmber = require('./0-calcul');
 
 describe('Tests for calculateNumber', () => {
   it('Returns 6', () => {
-    const result = calculateNUmber(2.5, 3);
-    assert.equal(result, 6);
+    assert.equal(calculateNUmber(2.5, 3), 6);
   });
   it('Returns 5', () => {
-    const result = calculateNUmber(1, 3.7);
-    assert.equal(result, 5);
+    assert.equal(calculateNUmber(1, 3.7), 5);
   });
   it('Returns 6', () => {
-    const result = calculateNUmber(1.5, 3.7);
-    assert.equal(result, 6);
+    assert.equal(calculateNUmber(1.5, 3.7), 6);
   });
   it('Returns 4', () => {
-    const result = calculateNUmber(1, 3);
-    assert.equal(result, 4);
+    assert.equal(calculateNUmber(1, 3), 4);
   });
 });
