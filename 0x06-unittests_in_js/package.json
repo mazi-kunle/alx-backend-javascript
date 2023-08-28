@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.8"
+    "chai": "^4.3.8",
+    "sinon": "^15.2.0"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^15.0.0",

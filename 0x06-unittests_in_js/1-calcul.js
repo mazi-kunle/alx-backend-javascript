@@ -1,4 +1,4 @@
-function calculateNUmber(type, a, b) {
+function calculateNumber(type, a, b) {
   if (type === 'SUM') {
     return Math.round(a) + Math.round(b);
   }
@@ -14,4 +14,4 @@ function calculateNUmber(type, a, b) {
   return 'Error';
 }
 
-module.exports = calculateNUmber;
+module.exports = calculateNumber;
